@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Welcome to the Universe</title>
+        <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="icon" type="image/png" href="apple-touch-icon-precomposed.png">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+        <script src="http://www.greensock.com/js/src/plugins/ThrowPropsPlugin.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/easing/EasePack.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/plugins/DirectionalRotationPlugin.min.js"></script>
+        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/plugins/CSSPlugin.min.js"></script>
+        
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		
+		<div class="universe">
+		
+			<div class="bg">
+			</div>
+			
+			<div class="man" id="man">
+				<div class="theguy"><div class="theeyes"></div></div>
+				
+			</div>
+			
+			<div class="iteration four"> 	
+				<div class="propholder fourturn">	
+					<img src="img/circ.png" class="fourimg" alt="" />
+				</div>
+                
+			</div>
+			<div class="iteration three"> 	
+				<div class="propholder threeturn">	
+					<img src="img/circ.png" class="threeimg" alt="" />
+				</div>
+                
+			</div>
+		
+			<div class="iteration two"> 
+				<div class="propholder twoturn">		
+					<img src="img/circ.png" class="twoimg" alt="" />
+				</div>
+                
+			</div>
+				
+	 		<div class="iteration one"> 
+	 			<div class="propholder oneturn">		
+	 				<img src="img/circ.png" class="oneimg"  alt="" />
+	 			</div>
+                
+	 		</div>
+            <div class="onehandle"></div>
+            <div class="twohandle"></div>
+            <div class="threehandle"></div>
+ 			<div class="fourhandle"></div>
+            <div class="manhandle" id="manhandle"></div>
+            
+            <div class="space">
+            
+            	<div class="spacebg"></div>
+	            <div class="truth">
+	            <p>Science is not only compatible with spirituality; it is a profound source of spirituality.</p> 
+	            <p>When we recognize our place in an immensity of light‐years and in the passage of ages, when we grasp the intricacy, beauty, and subtlety of life, then that soaring feeling, that sense of elation and humility combined, is surely spiritual.
+	            	<span class="sagan">&#8212; Carl Sagan</span>
+	            </p>
+	            </div>
+            </div>
+ 		</div>
+
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
+        <script>
+        	$('.manhandle').hover(function() {
+        		$('.man').toggleClass('cool');
+        	});
+//          var oneimg = document.getElementsByClassName("oneimg");
+//          var twoimg = document.getElementsByClassName("twoimg");
+//          var threeimg = document.getElementsByClassName("threeimg");
+//          var fourimg = document.getElementsByClassName("fourimg");
+//          
+//          TweenMax.to(oneimg, 100, {directionalRotation:"360_cw", ease:Linear.linear}).repeat(99);
+//          TweenMax.to(twoimg, 80, {directionalRotation:"360_ccw", ease:Linear.linear}).repeat(99);
+//          TweenMax.to(threeimg, 60, {directionalRotation:"360_cw", ease:Linear.linear}).repeat(99);
+//          TweenMax.to(fourimg, 50, {directionalRotation:"360_ccw", ease:Linear.linear}).repeat(99);
+          
+			
+          
+          document.getElementById('manhandle').onclick = function() {
+          	var man = document.getElementById("man");
+          	var circle = document.getElementsByClassName("propholder");
+          	var bg = document.getElementsByClassName("bg");
+          	var space = document.getElementsByClassName("space");
+          	var truth = document.getElementsByClassName("truth");
+          	
+            TweenMax.to(man, 1, {transform: "translateY(-2000px) scale(.8)", ease:Power2.easeInOut}).delay(.4);
+            TweenMax.to(circle, 1.2, {transform: "scale(4.5)", ease:Back.easeInOut});
+            TweenMax.to(bg, 3, {transform: "scale(3) translateY(200px)", opacity:0, ease:Sine.easeOut}).delay(.4);
+            
+            TweenMax.to(space, 3, {transform: "scale(1.1) ", ease:Sine.easeOut});
+            TweenMax.to(truth, 3, {transform: "translateY(-10px)", opacity: 1, ease:Sine.easeOut}).delay(2);
+            
+            $('.manhandle').css("display" , "none");
+          }
+
+		</script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

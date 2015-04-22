@@ -1,0 +1,1067 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+html, body, .universe, .iteration, .space{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.space, .spacebg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;	
+}
+
+.spacebg{
+	background: #000 url('../img/space.gif') no-repeat center center;
+	background-size: cover;
+	-webkit-animation: darkcycle 50s infinite  ease-in-out; /* Safari 4+ */
+	-moz-animation:    darkcycle 50s infinite  ease-in-out; /* Fx 5+ */
+	-o-animation:      darkcycle 50s infinite  ease-in-out; /* Opera 12+ */
+	animation:         darkcycle 50s infinite  ease-in-out; /* IE 10+, Fx 29+ */
+}
+.truth{
+	font-family: 'Questrial', sans-serif;
+	position: absolute;
+	top: 34%;
+	left: 50%;
+	width: 800px;
+	margin-left: -380px;
+	color: white;
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: 1px;
+	opacity: 0;
+}
+.sagan{
+	display: block;
+	text-align: right;
+	font-size: 18px;
+}
+.propholder{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top: 0; left: 0;
+	z-index: 40;
+}
+.fourhandle{
+    width: 2773px; height: 2773px;
+	position: absolute;
+	left: 50%; top: 50%;
+    border-radius: 50%;
+	margin-left: -1386px; margin-top: -1386px;
+	transform: scale(.23) rotate(0deg);  
+    z-index: 80;
+}
+.threehandle{
+    width: 2773px; height: 2773px;
+	position: absolute;
+	left: 50%; top: 50%;
+    border-radius: 50%;
+	margin-left: -1386px; margin-top: -1386px;
+	transform: scale(.37) rotate(0deg);  
+    z-index: 70;
+}
+.twohandle{
+    width: 2773px; height: 2773px;
+	position: absolute;
+	left: 50%; top: 50%;
+    border-radius: 50%;
+	margin-left: -1386px; margin-top: -1386px;
+	transform: scale(.65) rotate(0deg);  
+    z-index: 60;
+}
+.onehandle{
+    width: 2773px; height: 2773px;
+	position: absolute;
+	left: 50%; top: 50%;
+    border-radius: 50%;
+	margin-left: -1386px; margin-top: -1386px;
+	transform: scale(1) rotate(0deg);  
+    z-index: 50;
+}
+
+.one img{
+	width: 2773px; height: 2773px;
+	position: absolute;
+	left: 50%; top: 50%;
+	margin-left: -1386px; margin-top: -1386px;
+	transform: scale(1) rotate(0deg);
+	-webkit-transform: scale(1) rotate(0deg);
+	
+	-webkit-animation: spinnerone 200s infinite linear,
+						darkcycle 12s infinite  ease-in-out; /* Safari 4+ */
+	
+	-moz-animation:    spinnerone 200s infinite linear,
+						darkcycle 12s infinite  ease-in-out; /* Fx 5+ */
+	
+	-o-animation:      spinnerone 200s infinite linear,
+						darkcycle 12s infinite  ease-in-out; /* Opera 12+ */
+	
+	animation:         spinnerone 200s infinite linear,
+						darkcycle 12s infinite  ease-in-out; /* IE 10+, Fx 29+ */
+	
+}
+.twoturn{
+	-webkit-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+.two img{
+	width: 2773px; height: 2773px;
+	position: absolute;
+	left: 50%; top: 50%;
+	margin-left: -1386px; margin-top: -1386px;
+	transform: scale(.7) ;
+	-webkit-transform: scale(.7) ;
+	
+	-webkit-animation: spinnertwo 120s infinite linear,
+						darkcycle 11s infinite  ease-in-out; /* Safari 4+ */
+						
+	-moz-animation:    spinnertwo 120s infinite linear,
+						darkcycle 11s infinite  ease-in-out; /* Fx 5+ */
+						
+	-o-animation:      spinnertwo 120s infinite linear,
+						darkcycle 11s infinite  ease-in-out; /* Opera 12+ */
+						
+	animation:         spinnertwo 120s infinite linear,
+						darkcycle 11s infinite  ease-in-out; /* IE 10+, Fx 29+ */
+	}
+.threeturn{
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.three img{
+	width: 2773px; height: 2773px;
+	position: absolute;
+	left: 50%; top: 50%;
+	margin-left: -1386px; margin-top: -1386px;
+	transform: scale(.5);
+	-webkit-transform: scale(.5);
+	
+	-webkit-animation: spinnerthree 100s infinite linear,
+						darkcycle 10s infinite  ease-in-out; /* Safari 4+ */
+	-moz-animation:    spinnerthree 100s infinite linear,
+						darkcycle 10s infinite  ease-in-out; /* Fx 5+ */
+	-o-animation:      spinnerthree 100s infinite linear,
+						darkcycle 10s infinite  ease-in-out; /* Opera 12+ */
+	animation:         spinnerthree 100s infinite linear,
+						darkcycle 10s infinite  ease-in-out; /* IE 10+, Fx 29+ */
+	
+}
+
+.four img{
+	width: 2773px; height: 2773px;
+	position: absolute;
+	left: 50%; top: 50%;
+	margin-left: -1386px; margin-top: -1386px;
+	transform: scale(.35) rotate(0deg);
+	-webkit-transform: scale(.35) rotate(0deg);
+	
+	-webkit-animation: spinnerfour 90s infinite linear,
+						darkcycle 9s infinite  ease-in-out; /* Safari 4+ */
+	-moz-animation:    spinnerfour 90s infinite linear,
+						darkcycle 9s infinite  ease-in-out; /* Fx 5+ */
+	-o-animation:      spinnerfour 90s infinite linear,
+						darkcycle 9s infinite  ease-in-out; /* Opera 12+ */
+	animation:         spinnerfour 90s infinite linear,
+						darkcycle 9s infinite  ease-in-out; /* IE 10+, Fx 29+ */
+}
+
+.bg {
+	background:  url('../img/background.jpg') no-repeat center center;
+	background-size: cover;
+	width: 66%;
+	height: 70%;
+	margin: auto;
+	transform: scale(1.7) translateY(21%);
+	-webkit-transform: scale(1.7) translateY(21%);
+	z-index: 10;
+	position: relative;
+	-webkit-animation: darkcycle 9s infinite  ease-in-out; /* Safari 4+ */
+	-moz-animation:    darkcycle 9s infinite  ease-in-out; /* Safari 4+ */
+	-o-animation:      darkcycle 9s infinite  ease-in-out; /* Safari 4+ */
+	animation:         darkcycle 9s infinite  ease-in-out; /* Safari 4+ */
+}
+
+.theguy, .manhandle{
+	width: 236px;
+	height: 295px;
+	background:  url('../img/theguy.png') no-repeat center center;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	
+	margin-top: -148px;
+	overflow: visible;
+	-webkit-animation: bob 6s infinite ease-in-out ,
+						lightcycle 9s infinite  ease-in-out; /* Safari 4+ */
+	-moz-animation:    bob 6s infinite ease-in-out ,
+						lightcycle 9s infinite  ease-in-out; /* Fx 5+ */
+	-o-animation:      bob 6s infinite ease-in-out ,
+						lightcycle 9s infinite  ease-in-out; /* Opera 12+ */
+	animation:         bob 6s infinite ease-in-out ,
+						lightcycle 9s infinite  ease-in-out; /* IE 10+, Fx 29+ */
+}
+.manhandle{
+	left: 50%;
+	margin-left: -118px;
+	z-index: 110;
+	background: none;
+	cursor: pointer;
+}
+
+.cool{
+	transform: scale(1) translateY(-20px) !important;
+	-webkit-transform: scale(1) translateY(-20px) !important;
+	
+	
+}
+.man{
+	width: 236px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -118px;
+	z-index: 10;
+	transform: scale(1);
+	-webkit-transition: transform .2s ease-out 0s;
+	transition: transform .2s ease-out 0s;
+}
+
+
+.theeyes{
+	background: url('../img/eyerays.png') no-repeat center top;
+	width: 39px;
+	height: 1683px;
+	z-index: 20;
+	position: relative;
+	top: -1072px;
+	left: 123px;
+	-webkit-animation: shimmer 2s infinite  ease-in-out; /* Safari 4+ */
+	-moz-animation:    shimmer 2s infinite  ease-in-out; /* Safari 4+ */
+	-o-animation:      shimmer 2s infinite  ease-in-out; /* Safari 4+ */
+	animation:         shimmer 2s infinite  ease-in-out; /* Safari 4+ */
+}
+
+@-webkit-keyframes spacecycle {
+  0%   { 
+  	-webkit-transform: scale(1.1);
+   }
+  25%{
+  	-webkit-transform: scale(1.15);
+  }
+
+  100% { 
+  	-webkit-filter: scale(1.1);
+   }
+}
+
+@-moz-keyframes spacecycle {
+  0%   { 
+  	-moz-transform: scale(1.1);
+   }
+  25%{
+  	-moz-transform: scale(1.15);
+  }
+  100% { 
+  	-moz-filter: scale(1.1);
+   }
+}
+
+@keyframes spacecycle {
+  0%   { 
+  	transform: scale(1.1);
+   }
+  25%{
+  	transform: scale(1.15);
+  }
+
+  100% { 
+  	filter: scale(1.1);
+   }
+}
+
+@-webkit-keyframes bob {
+  0%   { 
+  	-webkit-transform: translateY(0px);
+   }
+  25%{
+  	-webkit-transform: translateY(-10px);
+  }
+  50%{
+  	-webkit-filter: translateY(-3px);
+  }
+  75%{
+  	-webkit-filter: translateY(-11px);
+  }
+  100% { 
+  	-webkit-filter: translateY(0);
+   }
+}
+
+@-moz-keyframes bob {
+  0%   { 
+  	-moz-transform: translateY(0px);
+   }
+  25%{
+  	-moz-transform: translateY(-10px);
+  }
+  50%{
+  	-moz-filter: translateY(-3px);
+  }
+  75%{
+  	-moz-filter: translateY(-11px);
+  }
+  100% { 
+  	-moz-filter: translateY(0);
+   }
+}
+
+@keyframes bob {
+  0%   { 
+  	transform: translateY(0px);
+   }
+  25%{
+  	transform: translateY(-10px);
+  }
+  50%{
+  	filter: translateY(-3px);
+  }
+  75%{
+  	filter: translateY(-11px);
+  }
+  100% { 
+  	filter: translateY(0);
+   }
+}
+
+@-webkit-keyframes lightcycle {
+  0%   { 
+  	-webkit-filter: brightness(50%) ;
+   }
+  33%{
+  	-webkit-filter: brightness(120%) ;
+  }
+  100% { 
+  	-webkit-filter: brightness(50%) ;
+   }
+}
+@-moz-keyframes lightcycle {
+  0%   { 
+  	filter: brightness(50%) ;
+   }
+  33%   { 
+  	filter: brightness(120%) ;
+   }
+  100% { 
+  	filter: brightness(50%) ;
+   }
+}
+@-o-keyframes lightcycle {
+  0%   { 
+  	-o-filter: brightness(50%) ;
+   }
+  33%   { 
+   	-o-filter: brightness(120%) ;
+   }
+  100% { 
+  	-o-filter: brightness(50%) ;
+   }
+}
+@keyframes lightcycle {
+  0%   { 
+  	filter: brightness(50%) ;
+   }
+  33%   { 
+  	filter: brightness(120%) ;
+   }
+  100% { 
+  	filter: brightness(50%) ;
+   }
+}
+
+
+
+@-webkit-keyframes shimmer {
+	0%   { 
+		-webkit-filter: brightness(100%) ;
+	 }
+	33%   { 
+		-webkit-filter: brightness(120%) ;
+	 }
+	100% { 
+		-webkit-filter: brightness(100%) ;
+	 }
+}
+@-moz-keyframes shimmer {
+  0%   { 
+  	filter: brightness(100%) ;
+   }
+  33%   { 
+  	filter: brightness(120%) ;
+   }
+  100% { 
+  	filter: brightness(100%) ;
+   }
+}
+@-o-keyframes shimmer {
+  0%   { 
+  	-o-filter: brightness(100%) ;
+   }
+  33%   { 
+   	-o-filter: brightness(120%) ;
+   }
+  100% { 
+  	-o-filter: brightness(100%) ;
+   }
+}
+@keyframes shimmer {
+  0%   { 
+  	filter: brightness(100%) ;
+   }
+  33%   { 
+  	filter: brightness(120%) ;
+   }
+  100% { 
+  	filter: brightness(100%) ;
+   }
+}
+
+
+
+@-webkit-keyframes darkcycle {
+  0%   { 
+  	-webkit-filter: brightness(35%);
+   }
+  33%{
+  	-webkit-filter: brightness(100%);
+  }
+  100% { 
+  	-webkit-filter: brightness(35%);
+   }
+}
+@-moz-keyframes darkcycle {
+  0%   { 
+  	filter: brightness(35%);
+   }
+  33%   { 
+  	filter: brightness(100%);
+   }
+  100% { 
+  	filter: brightness(35%);
+   }
+}
+@-o-keyframes darkcycle {
+  0%   { 
+  	-o-filter: brightness(35%);
+   }
+  33%   { 
+   	-o-filter: brightness(100%);
+   }
+  100% { 
+  	-o-filter: brightness(35%);
+   }
+}
+@keyframes darkcycle {
+  0%   { 
+  	filter: brightness(35%);
+   }
+  33%   { 
+  	filter: brightness(100%);
+   }
+  100% { 
+  	filter: brightness(35%);
+   }
+}
+
+
+
+
+
+@-webkit-keyframes spinnerone {
+  0%   { 
+  	-webkit-transform: scale(1) rotate(0deg);
+   }
+  100% { 
+  	-webkit-transform: scale(1) rotate(360deg);
+   }
+}
+@-moz-keyframes spinnerone {
+  0%   { 
+  	-moz-transform: scale(1) rotate(0deg);
+   }
+  100% { 
+  	-moz-transform: scale(1) rotate(360deg);
+   }
+}
+@-o-keyframes spinnerone {
+  0%   { 
+  	-o-transform: scale(1) rotate(0deg);
+   }
+  100% { 
+  	-o-transform: scale(1) rotate(360deg);
+   }
+}
+@keyframes spinnerone {
+  0%   { 
+  	transform: scale(1) rotate(0deg);
+   }
+  100% { 
+  	transform: scale(1) rotate(360deg);
+   }
+}
+
+
+
+
+@-webkit-keyframes spinnertwo {
+  0%   { 
+  	-webkit-transform: scale(.7) rotate(0deg);
+   }
+  100% { 
+  	-webkit-transform: scale(.7) rotate(-360deg);
+   }
+}
+@-moz-keyframes spinnertwo {
+  0%   { 
+  	-moz-transform: scale(.7) rotate(0deg);
+   }
+  100% { 
+  	-moz-transform: scale(.7) rotate(-360deg);
+   }
+}
+@-o-keyframes spinnertwo {
+  0%   { 
+  	-o-transform: scale(.7) rotate(0deg);
+   }
+  100% { 
+  	-o-transform: scale(.7) rotate(-360deg);
+   }
+}
+@keyframes spinnertwo {
+  0%   { 
+  	transform: scale(.7) rotate(0deg);
+   }
+  100% { 
+  	transform: scale(.7) rotate(-360deg);
+   }
+}
+
+
+
+
+@-webkit-keyframes spinnerthree {
+  0%   { 
+  	-webkit-transform: scale(.5) rotate(0deg);
+   }
+  100% { 
+  	-webkit-transform: scale(.5) rotate(360deg);
+   }
+}
+@-moz-keyframes spinnerthree {
+  0%   { 
+  	-moz-transform: scale(.5) rotate(0deg);
+   }
+  100% { 
+  	-moz-transform: scale(.5) rotate(360deg);
+   }
+}
+@-o-keyframes spinnerthree {
+  0%   { 
+  	-o-transform: scale(.5) rotate(0deg);
+   }
+  100% { 
+  	-o-transform: scale(.5) rotate(360deg);
+   }
+}
+@keyframes spinnerthree {
+  0%   { 
+  	transform: scale(.5) rotate(0deg);
+   }
+  100% { 
+  	transform: scale(.5) rotate(360deg);
+   }
+}
+
+
+
+
+@-webkit-keyframes spinnerfour {
+  0%   { 
+  	-webkit-transform: scale(.35) rotate(0deg);
+   }
+  100% { 
+  	-webkit-transform: scale(.35) rotate(-360deg);
+   }
+}
+@-moz-keyframes spinnerfour {
+  0%   { 
+  	-moz-transform: scale(.35) rotate(0deg);
+   }
+  100% { 
+  	-moz-transform: scale(.35) rotate(-360deg);
+   }
+}
+@-o-keyframes spinnerfour {
+  0%   { 
+  	-o-transform: scale(.35) rotate(0deg);
+   }
+  100% { 
+  	-o-transform: scale(.35) rotate(-360deg);
+   }
+}
+@keyframes spinnerfour {
+  0%   { 
+  	transform: scale(.35) rotate(0deg);
+   }
+  100% { 
+  	transform: scale(.35) rotate(-360deg);
+   }
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {	
+
+	@-webkit-keyframes spinnerfoursm {
+	  0%   { 
+	  	-webkit-transform: scale(.25) rotate(0deg);
+	   }
+	  100% { 
+	  	-webkit-transform: scale(.25) rotate(-360deg);
+	   }
+	}
+	.bg{
+		width: 100%;
+	}
+	.man{
+		-webkit-transform: scale(.5);
+		transform: scale(.5);
+	}
+	.four img{
+		width: 2773px; height: 2773px;
+		position: absolute;
+		left: 50%; top: 50%;
+		margin-left: -1386px; margin-top: -1386px;
+		transform: scale(.35) rotate(0deg);
+		-webkit-transform: scale(.35) rotate(0deg);
+		
+		-webkit-animation: spinnerfoursm 90s infinite linear,
+							darkcycle 9s infinite  ease-in-out; /* Safari 4+ */
+		-moz-animation:    spinnerfour 90s infinite linear,
+							darkcycle 9s infinite  ease-in-out; /* Fx 5+ */
+		-o-animation:      spinnerfour 90s infinite linear,
+							darkcycle 9s infinite  ease-in-out; /* Opera 12+ */
+		animation:         spinnerfour 90s infinite linear,
+							darkcycle 9s infinite  ease-in-out; /* IE 10+, Fx 29+ */
+	}
+	.one img, .two img, .three img{
+		display: none;
+	}
+
+
+	@-webkit-keyframes bob {
+	  0%   { 
+	  	-webkit-transform: translateY(0px);
+	   }
+	  25%{
+	  	-webkit-transform: translateY(-6px);
+	  }
+	  50%{
+	  	-webkit-filter: translateY(0px);
+	  }
+	  75%{
+	  	-webkit-filter: translateY(-8px);
+	  }
+	  100% { 
+	  	-webkit-filter: translateY(0);
+	   }
+	}
+	
+	@-moz-keyframes bob {
+	  0%   { 
+	  	-moz-transform: translateY(0px);
+	   }
+	  25%{
+	  	-moz-transform: translateY(-6px);
+	  }
+	  50%{
+	  	-moz-filter: translateY(0px);
+	  }
+	  75%{
+	  	-moz-filter: translateY(-8px);
+	  }
+	  100% { 
+	  	-moz-filter: translateY(0);
+	   }
+	}
+	
+	@keyframes bob {
+	  0%   { 
+	  	transform: translateY(0px);
+	   }
+	  25%{
+	  	transform: translateY(-6px);
+	  }
+	  50%{
+	  	filter: translateY(0px);
+	  }
+	  75%{
+	  	filter: translateY(-8px);
+	  }
+	  100% { 
+	  	filter: translateY(0);
+	   }
+	}
+}
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
